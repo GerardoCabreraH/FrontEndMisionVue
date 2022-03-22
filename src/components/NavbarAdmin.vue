@@ -35,14 +35,14 @@
                                 </router-link>
                             </li>
                             <li>
-                                <a href="../admin/productos/index.html">
+                                <router-link to="/admin/productos/" class="nav-link">
                                     <p><i class="fas fa-box"></i> Sabores y Adornos</p>
-                                </a>
+                                </router-link>
                             </li>
                             <li>
-                                <a href="../admin/pedidos/index.html">
+                                <router-link to="/admin/pedidos/" class="nav-link">
                                     <p><i class="fas fa-list"></i> Pedidos</p>
-                                </a>
+                                </router-link>
                             </li>
                             <li>
                                 <router-link to="/admin/usuarios/" class="nav-link">

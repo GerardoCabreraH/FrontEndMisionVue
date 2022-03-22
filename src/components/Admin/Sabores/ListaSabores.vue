@@ -6,10 +6,13 @@
                     <h2 class="text-center">Sabores</h2>
                 </div>
                 <div class="col-12 col-sm-12 mt-5">
-                    <ul class="list-group">
+                    <ul class="list-group" v-if="$store.getters.sabores">
                         <li class="list-group-item" v-for="sabor in $store.getters.sabores" :key="sabor.id"><a
                                 href="#">Sabor:
                                 {{sabor.nombre}} Existencias: {{sabor.existencias}}</a></li>
+                    </ul>
+                    <ul class="list-group" v-else>
+                         <li class="list-group-item">Sin resultados</li>
                     </ul>
                 </div>
             </div>

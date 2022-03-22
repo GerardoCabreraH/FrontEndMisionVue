@@ -6,10 +6,13 @@
                     <h2 class="text-center">Adornos restantes</h2>
                 </div>
                 <div class="col-12 col-sm-12 mt-5">
-                    <ul class="list-group">
-                        <li class="list-group-item" v-for="adornos in $store.getters.adornos" :key="adornos.id"><a
+                    <ul class="list-group" v-if="$store.getters.adornos">
+                        <li class="list-group-item" v-for="adorno in $store.getters.adornos" :key="adorno.id"><a
                                 href="#">Adorno:
-                                {{adornos.nombre}} Existencias: {{adornos.existencias}}</a></li>
+                                {{adorno.nombre}} Existencias: {{adorno.existencias}}</a></li>
+                    </ul>
+                    <ul class="list-group" v-else>
+                         <li class="list-group-item">Sin resultados</li>
                     </ul>
                 </div>
             </div>

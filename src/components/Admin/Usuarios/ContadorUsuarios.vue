@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12">
-                    <h1 class="text-center">Dashboard</h1>
+                    <h1 class="text-center">Gestion de usuarios</h1>
                 </div>
                 <div class="col-12 col-sm-12 mt-5">
                     <div class="row">

@@ -3,6 +3,8 @@ import IndexView from '../views/IndexView.vue'
 import LoginView from '../views/Admin/LoginView.vue'
 import DashboardView from '../views/Admin/DashboardView.vue'
 import UsuarioView from '../views/Admin/Usuarios/UsuarioIndexView.vue'
+import ProductoView from '../views/Admin/Productos/ProductosIndexView.vue'
+import PedidoView from '../views/Admin/Pedidos/PedidosIndexView.vue'
 
 const routes = [
   {
@@ -29,13 +31,28 @@ const routes = [
       title: 'Pasteleria Monterrorro | Panel de pastelero'
     }
   },
-  
   {
     path: '/admin/usuarios/',
     name: 'admin.users.index',
     component: UsuarioView,
     meta: {
       title: 'Pasteleria Monterrorro | Panel de usuarios'
+    }
+  },
+  {
+    path: '/admin/productos/',
+    name: 'admin.products.index',
+    component: ProductoView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Panel de productos'
+    }
+  },
+  {
+    path: '/admin/pedidos/',
+    name: 'admin.orders.index',
+    component: PedidoView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Panel de pedidos'
     }
   },
   //{

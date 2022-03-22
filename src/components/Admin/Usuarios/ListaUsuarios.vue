@@ -8,7 +8,7 @@
                 <th>Acciones</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody v-if="$store.state.usuarios">
             <tr v-for="usuario in $store.state.usuarios" :key="usuario.id">
                 <td data-label="Código del usuario">
                     <p class="mt-2">{{usuario.codigo}}</p>
@@ -34,6 +34,11 @@
                         </div>
                     </div>
                 </td>
+            </tr>
+        </tbody>
+        <tbody v-else>
+            <tr>
+                <td colspan="4">Sin resultados</td>
             </tr>
         </tbody>
     </table>
