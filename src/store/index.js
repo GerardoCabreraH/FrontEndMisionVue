@@ -2,7 +2,9 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    productos: [{ id: '1', imagen: 'img/productos/sabor-vanilla.jpg', nombre: 'Vanilla', precio: '30.00', tipo: 'Sabor' }, { id: '2', imagen: 'img/productos/sabor-chocolate.jpg', nombre: 'Chocolate', precio: '30.00', tipo: 'Sabor' }, { id: '3', imagen: 'img/productos/sabor-fresa.jpg', nombre: 'Fresa', precio: '30.00', tipo: 'Sabor' }, { id: '4', imagen: 'img/productos/sabor-limon.png', nombre: 'Limón', precio: '30.00', tipo: 'Sabor' }, { id: '5', imagen: 'img/productos/trozos-de-chocolate.jpg', nombre: 'Trozos de chocolate', precio: '30.00', tipo: 'Adorno' }, { id: '6', imagen: 'img/productos/trozos-de-mango.png', nombre: 'Trozos de mango', precio: '30.00', tipo: 'Adorno' }, { id: '7', imagen: 'img/productos/trozos-de-fresa.jpg', nombre: 'Trozos de fresa', precio: '30.00', tipo: 'Adorno' }, { id: '8', imagen: 'img/productos/trozos-de-durazno.jpg', nombre: 'Trozos de durazno', precio: '30.00', tipo: 'Adorno' }],
+    productos: [{ id: '1', imagen: 'img/productos/sabor-vanilla.jpg', nombre: 'Vanilla', precio: '30.00', tipo: 'Sabor', existencias: '30' }, { id: '2', imagen: 'img/productos/sabor-chocolate.jpg', nombre: 'Chocolate', precio: '30.00', tipo: 'Sabor', existencias: '30' }, { id: '3', imagen: 'img/productos/sabor-fresa.jpg', nombre: 'Fresa', precio: '30.00', tipo: 'Sabor', existencias: '30' }, { id: '4', imagen: 'img/productos/sabor-limon.png', nombre: 'Limón', precio: '30.00', tipo: 'Sabor', existencias: '30' }, { id: '5', imagen: 'img/productos/trozos-de-chocolate.jpg', nombre: 'Trozos de chocolate', precio: '30.00', tipo: 'Adorno', existencias: '30' }, { id: '6', imagen: 'img/productos/trozos-de-mango.png', nombre: 'Trozos de mango', precio: '30.00', tipo: 'Adorno', existencias: '30' }, { id: '7', imagen: 'img/productos/trozos-de-fresa.jpg', nombre: 'Trozos de fresa', precio: '30.00', tipo: 'Adorno', existencias: '30' }, { id: '8', imagen: 'img/productos/trozos-de-durazno.jpg', nombre: 'Trozos de durazno', precio: '30.00', tipo: 'Adorno', existencias: '30' }],
+    usuarios: [{codigo: "U00122", nombre: "Admin", email:"admin@monterollo.com.mx", rol: "Administrador"}],
+    pedidos: [{ id: '1', codigo: 'P00122', nombre: 'Gerardo Cabrera', email: 'gerardo_cabrera@correo.com', telefono: '8183912893', productos: ['Vanilla'], descripcion: 'Descripcion', total: '30.00'}]
   },
   getters: {
     sabores (state) {
@@ -15,6 +17,13 @@ export default createStore({
         return producto.tipo == "Adorno";
       })
     },
+    ingresos(state) {
+      var sum = 0;
+      for (var i = 0; i < state.pedidos.length; i++) {
+        sum += state.pedidos[i].num || 0
+      }
+      return sum.toFixed(2);
+    }
   },
   mutations: {
     totalIt() {
@@ -31,7 +40,18 @@ export default createStore({
   actions: {
     totalIt (context) {
       context.commit('totalIt')
-    }
+    },
+    showSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      var dashboard = document.getElementById("dashboard");
+      if (sidebar.style.display === "none" && dashboard.style.display === "block") {
+        sidebar.style.display = "block";
+        dashboard.style.display = "none";
+      } else {
+        sidebar.style.display = "none";
+        dashboard.style.display = "block";
+      }
+    },
   },
   modules: {
   }

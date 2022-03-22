@@ -1,7 +1,8 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import IndexView from '../views/IndexView.vue'
-import LoginView from '../views/LoginView.vue'
+import LoginView from '../views/Admin/LoginView.vue'
+import DashboardView from '../views/Admin/DashboardView.vue'
+import UsuarioView from '../views/Admin/Usuarios/UsuarioIndexView.vue'
 
 const routes = [
   {
@@ -17,7 +18,24 @@ const routes = [
     name: 'admin.login',
     component: LoginView,
     meta: {
-      title: 'Pasteleria Monterrorro | Iniciar sesion pastelerio'
+      title: 'Pasteleria Monterrorro | Iniciar sesion pastelero'
+    }
+  },
+  {
+    path: '/admin/dashboard/',
+    name: 'admin.dashboard',
+    component: DashboardView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Panel de pastelero'
+    }
+  },
+  
+  {
+    path: '/admin/usuarios/',
+    name: 'admin.users.index',
+    component: UsuarioView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Panel de usuarios'
     }
   },
   //{
