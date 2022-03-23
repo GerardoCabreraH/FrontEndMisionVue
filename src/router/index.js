@@ -11,6 +11,8 @@ import ProductoCreateView from '../views/Admin/Productos/ProductoCreateView.vue'
 import ProductoShowView from '../views/Admin/Productos/ProductoShowView.vue'
 import ProductoEditView from '../views/Admin/Productos/ProductoEditView.vue'
 import PedidoIndexView from '../views/Admin/Pedidos/PedidosIndexView.vue'
+import PedidoShowView from '../views/Admin/Pedidos/PedidosShowView.vue'
+import PedidoEditView from '../views/Admin/Pedidos/PedidosEditView.vue'
 
 const routes = [
   {
@@ -107,6 +109,22 @@ const routes = [
     component: PedidoIndexView,
     meta: {
       title: 'Pasteleria Monterrorro | Panel de pedidos'
+    }
+  },
+  {
+    path: '/admin/pedidos/ver',
+    name: 'admin.orders.show',
+    component: PedidoShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del pedido'
+    }
+  },
+  {
+    path: '/admin/pedidos/editar',
+    name: 'admin.orders.edit',
+    component: PedidoEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del pedido'
     }
   },
   //{

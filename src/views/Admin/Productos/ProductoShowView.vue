@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped>
-   .content {
+    .content {
         width: 80%;
         float: right;
         position: relative;

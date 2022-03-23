@@ -23,11 +23,10 @@
                     <div
                         class="form-group d-flex align-items-sm-center flex-sm-row flex-column mt-2">
                         <div class="p-1">
-                            <a class="btn btn-primary" href="#">Ver</a>
+                            <router-link class="btn btn-primary btn-block" to="/admin/pedidos/ver">Ver</router-link>
                         </div>
                         <div class="p-1">
-                            <a class="btn btn-warning"
-                                href="#">Editar</a>
+                            <router-link class="btn btn-warning btn-block" to="/admin/pedidos/editar">Editar</router-link>
                         </div>
                         <div class="p-1">
                             <a class="btn btn-danger" href="#">Eliminar</a>
