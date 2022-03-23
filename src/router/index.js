@@ -8,6 +8,8 @@ import UsuarioShowView from '../views/Admin/Usuarios/UsuarioShowView.vue'
 import UsuarioEditView from '../views/Admin/Usuarios/UsuarioEditView.vue'
 import ProductoIndexView from '../views/Admin/Productos/ProductosIndexView.vue'
 import ProductoCreateView from '../views/Admin/Productos/ProductoCreateView.vue'
+import ProductoShowView from '../views/Admin/Productos/ProductoShowView.vue'
+import ProductoEditView from '../views/Admin/Productos/ProductoEditView.vue'
 import PedidoIndexView from '../views/Admin/Pedidos/PedidosIndexView.vue'
 
 const routes = [
@@ -81,6 +83,22 @@ const routes = [
     component: ProductoCreateView,
     meta: {
       title: 'Pasteleria Monterrorro | Registro de productos'
+    }
+  },
+  {
+    path: '/admin/productos/ver/',
+    name: 'admin.products.show',
+    component: ProductoShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/editar/',
+    name: 'admin.products.edit',
+    component: ProductoEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del producto'
     }
   },
   {

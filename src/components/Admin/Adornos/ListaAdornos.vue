@@ -7,9 +7,9 @@
                 </div>
                 <div class="col-12 col-sm-12 mt-5">
                     <ul class="list-group" v-if="$store.getters.adornos">
-                        <li class="list-group-item" v-for="adorno in $store.getters.adornos" :key="adorno.id"><a
-                                href="#">Adorno:
-                                {{adorno.nombre}} Existencias: {{adorno.existencias}}</a></li>
+                        <li class="list-group-item" v-for="adorno in $store.getters.adornos" :key="adorno.id"><router-link
+                                to="/admin/productos/ver">Adorno:
+                                {{adorno.nombre}} Existencias: {{adorno.existencias}}</router-link></li>
                     </ul>
                     <ul class="list-group" v-else>
                          <li class="list-group-item">Sin resultados</li>

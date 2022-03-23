@@ -37,8 +37,8 @@
         </div>
     </section>
 </template>
-<script>
 
+<script>
 export default {
     name: 'VerUsuario'
 }

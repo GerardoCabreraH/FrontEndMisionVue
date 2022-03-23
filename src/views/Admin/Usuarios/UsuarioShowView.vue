@@ -18,14 +18,14 @@ export default {
 
 <style scoped>
    .content {
-        width: 80%;
-        float: right;
-        position: relative;
-    }
-    @media only screen and (max-width: 768px){
-        .content {
-            width: 100%;
-            float: left;
-        }
-    }
+      width: 80%;
+      float: right;
+      position: relative;
+   }
+   @media only screen and (max-width: 768px){
+      .content {
+         width: 100%;
+         float: left;
+      }
+   }
 </style>
