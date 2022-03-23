@@ -17,7 +17,7 @@
                     <p class="mt-2">{{pedido.nombre}}</p>
                 </td>
                 <td data-label="Total del pedido">
-                    <p class="mt-2">${{pedido.total}}</p>
+                    <p class="mt-2">${{pedido.total.toFixed(2)}}</p>
                 </td>
                 <td data-label="Acciones">
                     <div

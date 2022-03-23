@@ -2,9 +2,11 @@ import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router
 import IndexView from '../views/IndexView.vue'
 import LoginView from '../views/Admin/LoginView.vue'
 import DashboardView from '../views/Admin/DashboardView.vue'
-import UsuarioView from '../views/Admin/Usuarios/UsuarioIndexView.vue'
-import ProductoView from '../views/Admin/Productos/ProductosIndexView.vue'
-import PedidoView from '../views/Admin/Pedidos/PedidosIndexView.vue'
+import UsuarioIndexView from '../views/Admin/Usuarios/UsuarioIndexView.vue'
+import UsuarioCreateView from '../views/Admin/Usuarios/UsuarioCreateView.vue'
+import ProductoIndexView from '../views/Admin/Productos/ProductosIndexView.vue'
+import ProductoCreateView from '../views/Admin/Productos/ProductoCreateView.vue'
+import PedidoIndexView from '../views/Admin/Pedidos/PedidosIndexView.vue'
 
 const routes = [
   {
@@ -34,23 +36,39 @@ const routes = [
   {
     path: '/admin/usuarios/',
     name: 'admin.users.index',
-    component: UsuarioView,
+    component: UsuarioIndexView,
     meta: {
       title: 'Pasteleria Monterrorro | Panel de usuarios'
     }
   },
   {
+    path: '/admin/usuarios/crear',
+    name: 'admin.users.create',
+    component: UsuarioCreateView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Registro de usuarios'
+    }
+  },
+  {
     path: '/admin/productos/',
     name: 'admin.products.index',
-    component: ProductoView,
+    component: ProductoIndexView,
     meta: {
       title: 'Pasteleria Monterrorro | Panel de productos'
     }
   },
   {
+    path: '/admin/productos/crear',
+    name: 'admin.products.create',
+    component: ProductoCreateView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Registro de productos'
+    }
+  },
+  {
     path: '/admin/pedidos/',
     name: 'admin.orders.index',
-    component: PedidoView,
+    component: PedidoIndexView,
     meta: {
       title: 'Pasteleria Monterrorro | Panel de pedidos'
     }

@@ -2,9 +2,9 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    productos: [{ id: '1', imagen: 'img/productos/sabor-vanilla.jpg', nombre: 'Vanilla', precio: 30.00, tipo: 'Sabor', existencias: 30 }, { id: '2', imagen: 'img/productos/sabor-chocolate.jpg', nombre: 'Chocolate', precio: 30.00, tipo: 'Sabor', existencias: 30 }, { id: '3', imagen: 'img/productos/sabor-fresa.jpg', nombre: 'Fresa', precio: 30.00, tipo: 'Sabor', existencias: 30 }, { id: '4', imagen: 'img/productos/sabor-limon.png', nombre: 'Limón', precio: 30.00, tipo: 'Sabor', existencias: 30 }, { id: '5', imagen: 'img/productos/trozos-de-chocolate.jpg', nombre: 'Trozos de chocolate', precio: 30.00, tipo: 'Adorno', existencias: 30 }, { id: '6', imagen: 'img/productos/trozos-de-mango.png', nombre: 'Trozos de mango', precio: 30.00, tipo: 'Adorno', existencias: 30 }, { id: '7', imagen: 'img/productos/trozos-de-fresa.jpg', nombre: 'Trozos de fresa', precio: 30.00, tipo: 'Adorno', existencias: 30 }, { id: '8', imagen: 'img/productos/trozos-de-durazno.jpg', nombre: 'Trozos de durazno', precio: 30.00, tipo: 'Adorno', existencias: 30 }],
+    productos: [{ id: '1', imagen: 'img/productos/sabor-vanilla.jpg', nombre: 'Vanilla', precio: 25.00, tipo: 'Sabor', existencias: 30 }, { id: '2', imagen: 'img/productos/sabor-chocolate.jpg', nombre: 'Chocolate', precio: 25.00, tipo: 'Sabor', existencias: 30 }, { id: '3', imagen: 'img/productos/sabor-fresa.jpg', nombre: 'Fresa', precio: 25.00, tipo: 'Sabor', existencias: 30 }, { id: '4', imagen: 'img/productos/sabor-limon.png', nombre: 'Limón', precio: 25.00, tipo: 'Sabor', existencias: 30 }, { id: '5', imagen: 'img/productos/trozos-de-chocolate.jpg', nombre: 'Trozos de chocolate', precio: 25.00, tipo: 'Adorno', existencias: 30 }, { id: '6', imagen: 'img/productos/trozos-de-mango.png', nombre: 'Trozos de mango', precio: 25.00, tipo: 'Adorno', existencias: 30 }, { id: '7', imagen: 'img/productos/trozos-de-fresa.jpg', nombre: 'Trozos de fresa', precio: 25.00, tipo: 'Adorno', existencias: 30 }, { id: '8', imagen: 'img/productos/trozos-de-durazno.jpg', nombre: 'Trozos de durazno', precio: 25.00, tipo: 'Adorno', existencias: 30 }],
     usuarios: [{codigo: "U00122", nombre: "Admin", email:"admin@monterollo.com.mx", rol: "Administrador"}],
-    pedidos: [{ id: '1', codigo: 'P00122', nombre: 'Gerardo Cabrera', email: 'gerardo_cabrera@correo.com', telefono: '8183912893', productos: ['Vanilla'], descripcion: 'Descripcion', total: 30.00}]
+    pedidos: [{ id: '1', codigo: 'P00122', nombre: 'Gerardo Cabrera', email: 'gerardo_cabrera@correo.com', telefono: '8183912893', productos: ['Vanilla'], descripcion: 'Descripcion', total: 25.00}],
   },
   getters: {
     sabores (state) {
@@ -28,7 +28,7 @@ export default createStore({
         return total + producto.existencias;
       }, 0);
       return existencia;
-    }
+    },
   },
   mutations: {
     totalIt() {
@@ -59,5 +59,5 @@ export default createStore({
     },
   },
   modules: {
-  }
+  },
 })

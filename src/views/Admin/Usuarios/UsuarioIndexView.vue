@@ -2,7 +2,9 @@
     <NavbarAdmin />
     <main id="dashboard" class="content">
         <ContadorUsuarios />
-        <Usuarios />
+        <Usuarios>
+            <router-link class="btn btn-success btn-block" to="/admin/usuarios/crear">Crear</router-link>
+        </Usuarios>
     </main>
 </template>
 

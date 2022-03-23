@@ -1,11 +1,12 @@
 <template>
     <section id="pedidos" class="section-light">
-        <div class="usuarios">
+        <div class="container">
             <div class="card shadow">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-12 col-sm-12">
                             <h2 class="text-center">Tabla de usuarios</h2>
+                            <slot></slot>
                         </div>
                         <div class="col-12 col-sm-12 mt-5">
                             <ListaUsuarios />

@@ -2,18 +2,26 @@
     <NavbarAdmin />
     <main id="dashboard" class="content">
         <ContadorProductos />
-        <Productos />
+        <Productos>
+            <router-link class="btn btn-success btn-block" to="/admin/productos/crear">Crear</router-link>
+        </Productos>
     </main>
 </template>
+
 <script>
 import NavbarAdmin from "@/components/NavbarAdmin.vue";
 import ContadorProductos from "../../../components/Admin/Productos/ContadorProductos.vue";
 import Productos from "@/components/Admin/Productos.vue";
 export default {
     name: "ProductosIndexView",
-    components: { NavbarAdmin, ContadorProductos, Productos }
+    components: { 
+        NavbarAdmin, 
+        ContadorProductos, 
+        Productos 
+    }
 }
 </script>
+
 <style scoped>
     .content {
         width: 80%;
