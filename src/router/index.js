@@ -4,6 +4,8 @@ import LoginView from '../views/Admin/LoginView.vue'
 import DashboardView from '../views/Admin/DashboardView.vue'
 import UsuarioIndexView from '../views/Admin/Usuarios/UsuarioIndexView.vue'
 import UsuarioCreateView from '../views/Admin/Usuarios/UsuarioCreateView.vue'
+import UsuarioShowView from '../views/Admin/Usuarios/UsuarioShowView.vue'
+import UsuarioEditView from '../views/Admin/Usuarios/UsuarioEditView.vue'
 import ProductoIndexView from '../views/Admin/Productos/ProductosIndexView.vue'
 import ProductoCreateView from '../views/Admin/Productos/ProductoCreateView.vue'
 import PedidoIndexView from '../views/Admin/Pedidos/PedidosIndexView.vue'
@@ -42,11 +44,27 @@ const routes = [
     }
   },
   {
-    path: '/admin/usuarios/crear',
+    path: '/admin/usuarios/crear/',
     name: 'admin.users.create',
     component: UsuarioCreateView,
     meta: {
       title: 'Pasteleria Monterrorro | Registro de usuarios'
+    }
+  },
+  {
+    path: '/admin/usuarios/ver',
+    name: 'admin.users.show',
+    component: UsuarioShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del usuario'
+    }
+  },
+  {
+    path: '/admin/usuarios/editar/',
+    name: 'admin.users.edit', 
+    component: UsuarioEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del usuario'
     }
   },
   {
@@ -58,7 +76,7 @@ const routes = [
     }
   },
   {
-    path: '/admin/productos/crear',
+    path: '/admin/productos/crear/',
     name: 'admin.products.create',
     component: ProductoCreateView,
     meta: {
