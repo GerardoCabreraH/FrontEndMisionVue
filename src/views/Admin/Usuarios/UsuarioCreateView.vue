@@ -2,7 +2,7 @@
     <NavbarAdmin />
     <main id="dashboard" class="content">
         <CrearUsuario>
-            <router-link class="btn btn-primary btn-block" to="/admin/usuarios/">Regresar</router-link>
+            <router-link class="btn btn-primary btn-block" to="/admin/usuarios">Regresar</router-link>
         </CrearUsuario>
     </main>
 </template>

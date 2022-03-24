@@ -8,8 +8,22 @@ import UsuarioShowView from '../views/Admin/Usuarios/UsuarioShowView.vue'
 import UsuarioEditView from '../views/Admin/Usuarios/UsuarioEditView.vue'
 import ProductoIndexView from '../views/Admin/Productos/ProductosIndexView.vue'
 import ProductoCreateView from '../views/Admin/Productos/ProductoCreateView.vue'
-import ProductoShowView from '../views/Admin/Productos/ProductoShowView.vue'
-import ProductoEditView from '../views/Admin/Productos/ProductoEditView.vue'
+import SaborVanillaShowView from '../views/Admin/Productos/Sabores/SaborVanillaShowView.vue'
+import SaborChocolateShowView from '../views/Admin/Productos/Sabores/SaborChocolateShowView.vue'
+import SaborFresaShowView from '../views/Admin/Productos/Sabores/SaborFresaShowView.vue'
+import SaborLimonShowView from '../views/Admin/Productos/Sabores/SaborLimonShowView.vue'
+import SaborVanillaEditView from '../views/Admin/Productos/Sabores/SaborVanillaEditView.vue'
+import SaborChocolateEditView from '../views/Admin/Productos/Sabores/SaborChocolateEditView.vue'
+import SaborFresaEditView from '../views/Admin/Productos/Sabores/SaborFresaEditView.vue'
+import SaborLimonEditView from '../views/Admin/Productos/Sabores/SaborLimonEditView.vue'
+import AdornoTrozosChocolateShowView from '../views/Admin/Productos/Adornos/AdornoTrozosChocolateShowView.vue'
+import AdornoTrozosMangoShowView from '../views/Admin/Productos/Adornos/AdornoTrozosMangoShowView.vue'
+import AdornoTrozosFresaShowView from '../views/Admin/Productos/Adornos/AdornoTrozosFresaShowView.vue'
+import AdornoTrozosDuraznoShowView from '../views/Admin/Productos/Adornos/AdornoTrozosDuraznoShowView.vue'
+import AdornoTrozosChocolateEditView from '../views/Admin/Productos/Adornos/AdornoTrozosChocolateEditView.vue'
+import AdornoTrozosMangoEditView from '../views/Admin/Productos/Adornos/AdornoTrozosMangoEditView.vue'
+import AdornoTrozosFresaEditView from '../views/Admin/Productos/Adornos/AdornoTrozosFresaEditView.vue'
+import AdornoTrozosDuraznoEditView from '../views/Admin/Productos/Adornos/AdornoTrozosDuraznoEditView.vue'
 import PedidoIndexView from '../views/Admin/Pedidos/PedidosIndexView.vue'
 import PedidoShowView from '../views/Admin/Pedidos/PedidosShowView.vue'
 import PedidoEditView from '../views/Admin/Pedidos/PedidosEditView.vue'
@@ -24,7 +38,7 @@ const routes = [
     }
   },
   {
-    path: '/admin/login/',
+    path: '/admin/login',
     name: 'admin.login',
     component: LoginView,
     meta: {
@@ -32,7 +46,7 @@ const routes = [
     }
   },
   {
-    path: '/admin/dashboard/',
+    path: '/admin/dashboard',
     name: 'admin.dashboard',
     component: DashboardView,
     meta: {
@@ -40,7 +54,7 @@ const routes = [
     }
   },
   {
-    path: '/admin/usuarios/',
+    path: '/admin/usuarios',
     name: 'admin.users.index',
     component: UsuarioIndexView,
     meta: {
@@ -48,7 +62,7 @@ const routes = [
     }
   },
   {
-    path: '/admin/usuarios/crear/',
+    path: '/admin/usuarios/crear',
     name: 'admin.users.create',
     component: UsuarioCreateView,
     meta: {
@@ -56,7 +70,7 @@ const routes = [
     }
   },
   {
-    path: '/admin/usuarios/ver',
+    path: '/admin/usuarios/ver/u00122',
     name: 'admin.users.show',
     component: UsuarioShowView,
     meta: {
@@ -64,7 +78,7 @@ const routes = [
     }
   },
   {
-    path: '/admin/usuarios/editar/',
+    path: '/admin/usuarios/editar/u00122',
     name: 'admin.users.edit', 
     component: UsuarioEditView,
     meta: {
@@ -80,7 +94,7 @@ const routes = [
     }
   },
   {
-    path: '/admin/productos/crear/',
+    path: '/admin/productos/crear',
     name: 'admin.products.create',
     component: ProductoCreateView,
     meta: {
@@ -88,23 +102,135 @@ const routes = [
     }
   },
   {
-    path: '/admin/productos/ver/',
-    name: 'admin.products.show',
-    component: ProductoShowView,
+    path: '/admin/productos/ver/m00122',
+    name: 'admin.products.sabor.vainilla.show',
+    component: SaborVanillaShowView,
     meta: {
       title: 'Pasteleria Monterrorro | Informacion del producto'
     }
   },
   {
-    path: '/admin/productos/editar/',
-    name: 'admin.products.edit',
-    component: ProductoEditView,
+    path: '/admin/productos/ver/m00222',
+    name: 'admin.products.sabor.chocolate.show',
+    component: SaborChocolateShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/ver/m00322',
+    name: 'admin.products.sabor.fresa.show',
+    component: SaborFresaShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/ver/m00422',
+    name: 'admin.products.sabor.limon.show',
+    component: SaborLimonShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/ver/m00522',
+    name: 'admin.products.adorno.chocolate.show',
+    component: AdornoTrozosChocolateShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/ver/m00622',
+    name: 'admin.products.adorno.mango.show',
+    component: AdornoTrozosMangoShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/ver/m00722',
+    name: 'admin.products.adorno.fresa.show',
+    component: AdornoTrozosFresaShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/ver/m00822',
+    name: 'admin.products.adorno.durazno.show',
+    component: AdornoTrozosDuraznoShowView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Informacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/editar/m00122',
+    name: 'admin.products.sabor.vainilla.edit',
+    component: SaborVanillaEditView,
     meta: {
       title: 'Pasteleria Monterrorro | Modificacion del producto'
     }
   },
   {
-    path: '/admin/pedidos/',
+    path: '/admin/productos/editar/m00222',
+    name: 'admin.products.sabor.chocolate.edit',
+    component: SaborChocolateEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/editar/m00322',
+    name: 'admin.products.sabor.fresa.edit',
+    component: SaborFresaEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/editar/m00422',
+    name: 'admin.products.sabor.limon.edit',
+    component: SaborLimonEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/editar/m00522',
+    name: 'admin.products.adorno.chocolate.edit',
+    component: AdornoTrozosChocolateEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/editar/m00622',
+    name: 'admin.products.adorno.mango.edit',
+    component: AdornoTrozosMangoEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/editar/m00722',
+    name: 'admin.products.adorno.fresa.edit',
+    component: AdornoTrozosFresaEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del producto'
+    }
+  },
+  {
+    path: '/admin/productos/editar/m00822',
+    name: 'admin.products.adorno.durazno.edit',
+    component: AdornoTrozosDuraznoEditView,
+    meta: {
+      title: 'Pasteleria Monterrorro | Modificacion del producto'
+    }
+  },
+  {
+    path: '/admin/pedidos',
     name: 'admin.orders.index',
     component: PedidoIndexView,
     meta: {
@@ -112,7 +238,7 @@ const routes = [
     }
   },
   {
-    path: '/admin/pedidos/ver',
+    path: '/admin/pedidos/ver/p00122',
     name: 'admin.orders.show',
     component: PedidoShowView,
     meta: {
@@ -120,21 +246,13 @@ const routes = [
     }
   },
   {
-    path: '/admin/pedidos/editar',
+    path: '/admin/pedidos/editar/p00122',
     name: 'admin.orders.edit',
     component: PedidoEditView,
     meta: {
       title: 'Pasteleria Monterrorro | Modificacion del pedido'
     }
   },
-  //{
-    //path: '/about',
-    //name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    //component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  //}
 ]
 
 const router = createRouter({

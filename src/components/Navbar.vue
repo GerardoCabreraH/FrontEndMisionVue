@@ -27,7 +27,7 @@
                             <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <router-link to="/admin/login/" class="nav-link">Pastelero</router-link>
+                            <router-link to="/admin/login" class="nav-link">Pastelero</router-link>
                         </li>
                     </ul>
                 </div>

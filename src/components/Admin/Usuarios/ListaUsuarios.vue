@@ -23,11 +23,11 @@
                     <div
                         class="form-group d-flex align-items-sm-center flex-sm-row flex-column mt-2">
                         <div class="p-1">
-                            <router-link class="btn btn-primary" to="/admin/usuarios/ver/">Ver</router-link>
+                            <router-link class="btn btn-primary" :to="'/admin/usuarios/ver/'+usuario.slug">Ver</router-link>
                         </div>
                         <div class="p-1">
                             <router-link class="btn btn-warning"
-                                to="/admin/usuarios/editar/">Editar</router-link>
+                                :to="'/admin/usuarios/editar/'+usuario.slug">Editar</router-link>
                         </div>
                         <div class="p-1">
                             <a class="btn btn-danger" href="#">Eliminar</a>

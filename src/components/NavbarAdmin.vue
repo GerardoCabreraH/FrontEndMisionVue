@@ -30,22 +30,22 @@
                     <div class="col-12 col-sm-12 d-flex flex-column justify-content-center">
                         <ul>
                             <li>
-                                <router-link to="/admin/dashboard/" class="nav-link">
+                                <router-link to="/admin/dashboard" class="nav-link">
                                     <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
                                 </router-link>
                             </li>
                             <li>
-                                <router-link to="/admin/productos/" class="nav-link">
+                                <router-link to="/admin/productos" class="nav-link">
                                     <p><i class="fas fa-box"></i> Sabores y Adornos</p>
                                 </router-link>
                             </li>
                             <li>
-                                <router-link to="/admin/pedidos/" class="nav-link">
+                                <router-link to="/admin/pedidos" class="nav-link">
                                     <p><i class="fas fa-list"></i> Pedidos</p>
                                 </router-link>
                             </li>
                             <li>
-                                <router-link to="/admin/usuarios/" class="nav-link">
+                                <router-link to="/admin/usuarios" class="nav-link">
                                     <p><i class="fas fa-user"></i> Usuarios</p>
                                 </router-link>
                             </li>

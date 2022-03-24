@@ -22,10 +22,10 @@ export default {
         float: right;
         position: relative;
     }
-   @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px){
       .content {
         width: 100%;
         float: left;
       }
-   }
+    }
 </style>

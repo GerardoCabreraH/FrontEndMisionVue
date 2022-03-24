@@ -2,7 +2,7 @@
    <NavbarAdmin />
    <main id="dashboard" class="content">
       <VerUsuario>
-        <router-link class="btn btn-primary btn-block" to="/admin/usuarios/">Regresar</router-link>
+        <router-link class="btn btn-primary btn-block" to="/admin/usuarios">Regresar</router-link>
       </VerUsuario>
    </main>
 </template>

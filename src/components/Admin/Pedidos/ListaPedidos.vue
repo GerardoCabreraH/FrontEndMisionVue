@@ -23,10 +23,10 @@
                     <div
                         class="form-group d-flex align-items-sm-center flex-sm-row flex-column mt-2">
                         <div class="p-1">
-                            <router-link class="btn btn-primary btn-block" to="/admin/pedidos/ver">Ver</router-link>
+                            <router-link class="btn btn-primary btn-block" :to="'/admin/pedidos/ver/'+pedido.slug">Ver</router-link>
                         </div>
                         <div class="p-1">
-                            <router-link class="btn btn-warning btn-block" to="/admin/pedidos/editar">Editar</router-link>
+                            <router-link class="btn btn-warning btn-block" :to="'/admin/pedidos/editar/'+pedido.slug">Editar</router-link>
                         </div>
                         <div class="p-1">
                             <a class="btn btn-danger" href="#">Eliminar</a>

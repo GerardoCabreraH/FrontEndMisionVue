@@ -2,7 +2,7 @@
     <NavbarAdmin />
     <main id="dashboard" class="content">
         <VerPedido>
-            <router-link class="btn btn-primary btn-block" to="/admin/pedidos/">Regresar</router-link>
+            <router-link class="btn btn-primary btn-block" to="/admin/pedidos">Regresar</router-link>
         </VerPedido>
     </main>
 </template>

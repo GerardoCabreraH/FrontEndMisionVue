@@ -29,5 +29,5 @@ export default {
             width: 100%;
             float: left;
         }
-   }
+    }
 </style>
