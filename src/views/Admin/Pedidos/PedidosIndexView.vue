@@ -11,7 +11,11 @@ import ContadorPedidos from "../../../components/Admin/Pedidos/ContadorPedidos.v
 import Pedidos from "@/components/Admin/Pedidos.vue";
 export default {
     name: "PedidosIndexView",
-    components: { NavbarAdmin, ContadorPedidos, Pedidos }
+    components: { NavbarAdmin, ContadorPedidos, Pedidos },
+    mounted() {
+      let body = document.querySelector('body');
+      body.style.backgroundColor = "#ffffff";
+    }
 }
 </script>
 <style scoped>

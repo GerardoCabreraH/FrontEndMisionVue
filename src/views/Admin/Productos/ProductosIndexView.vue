@@ -18,6 +18,10 @@ export default {
         NavbarAdmin, 
         ContadorProductos, 
         Productos 
+    },
+    mounted() {
+      let body = document.querySelector('body');
+      body.style.backgroundColor = "#ffffff";
     }
 }
 </script>

@@ -12,7 +12,11 @@ import NavbarAdmin from "@/components/NavbarAdmin.vue";
 import EditarPedido from "@/components/Admin/Pedidos/EditarPedido.vue";
 export default {
     name: "PedidosEditView",
-    components: { NavbarAdmin, EditarPedido }
+    components: { NavbarAdmin, EditarPedido },
+    mounted() {
+      let body = document.querySelector('body');
+      body.style.backgroundColor = "#ffffff";
+    }
 }
 </script>
 

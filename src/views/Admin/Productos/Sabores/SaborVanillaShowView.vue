@@ -70,7 +70,11 @@ import NavbarAdmin from "@/components/NavbarAdmin.vue";
 import InformacionSabor from "@/components/Admin/Sabores/InformacionSabor.vue";
 export default {
     name: 'SaborVanillaShowView',
-    components: { NavbarAdmin, InformacionSabor }
+    components: { NavbarAdmin, InformacionSabor },
+    mounted() {
+      let body = document.querySelector('body');
+      body.style.backgroundColor = "#ffffff";
+    }
 }
 </script>
 

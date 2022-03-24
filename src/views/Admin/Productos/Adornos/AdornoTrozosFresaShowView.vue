@@ -70,7 +70,11 @@ import NavbarAdmin from "@/components/NavbarAdmin.vue";
 import InformacionAdorno from "@/components/Admin/Adornos/InformacionAdorno.vue";
 export default {
     name: 'AdornoTrozosMangoShowView',
-    components: { NavbarAdmin, InformacionAdorno }
+    components: { NavbarAdmin, InformacionAdorno },
+    mounted() {
+      let body = document.querySelector('body');
+      body.style.backgroundColor = "#ffffff";
+    }
 }
 </script>
 

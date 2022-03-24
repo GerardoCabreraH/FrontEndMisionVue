@@ -12,7 +12,11 @@ import NavbarAdmin from "@/components/NavbarAdmin.vue";
 import EditarUsuario from "@/components/Admin/Usuarios/EditarUsuario.vue";
 export default {
    name: 'UsuarioEditView',
-   components: { NavbarAdmin, EditarUsuario }
+   components: { NavbarAdmin, EditarUsuario },
+   mounted() {
+      let body = document.querySelector('body');
+      body.style.backgroundColor = "#ffffff";
+   }
 }
 </script>
 

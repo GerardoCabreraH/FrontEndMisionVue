@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 d-flex justify-content-center align-content-center">
-                        <div class="card shadow">
+                        <div class="card shadow h-100">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 text-center">
@@ -31,7 +31,11 @@
 import FormLogin from "@/components/Admin/FormLogin.vue";
   export default {
     name: "LoginView",
-    components: { FormLogin }
+    components: { FormLogin },
+    mounted() {
+        let body = document.querySelector('body');
+        body.style.backgroundColor = "#ffcccc";
+    }
 }
 </script>
 
@@ -43,8 +47,5 @@ import FormLogin from "@/components/Admin/FormLogin.vue";
 .login {
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 100%;
-    height: 100%;
-    background-color: #ffcccc;
 }
 </style>

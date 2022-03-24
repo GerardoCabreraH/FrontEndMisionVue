@@ -18,6 +18,10 @@ export default {
         NavbarAdmin,
         ContadorUsuarios,
         Usuarios
+    },
+    mounted() {
+        let body = document.querySelector('body');
+        body.style.backgroundColor = "#ffffff";
     }
 }
 </script>

@@ -12,7 +12,11 @@ import NavbarAdmin from "@/components/NavbarAdmin.vue";
 import VerUsuario from "@/components/Admin/Usuarios/VerUsuario.vue";
 export default {
    name: 'UsuarioShowView',
-   components: { NavbarAdmin, VerUsuario }
+   components: { NavbarAdmin, VerUsuario },
+   mounted() {
+      let body = document.querySelector('body');
+      body.style.backgroundColor = "#ffffff";
+   }
 }
 </script>
 

@@ -130,6 +130,8 @@ export default {
                 thumbnailElement.style.backgroundImage = null;
             }
         }
+        let body = document.querySelector('body');
+        body.style.backgroundColor = "#ffffff";
     },
 }
 </script>

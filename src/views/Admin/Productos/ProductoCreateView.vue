@@ -12,7 +12,11 @@ import CrearProducto from "../../../components/Admin/Productos/CrearProducto.vue
 import NavbarAdmin from "@/components/NavbarAdmin.vue";
 export default {
     name: "ProductoCreateView",
-    components: { CrearProducto, NavbarAdmin }
+    components: { CrearProducto, NavbarAdmin },
+    mounted() {
+      let body = document.querySelector('body');
+      body.style.backgroundColor = "#ffffff";
+    }
 }
 </script>
 

@@ -11,7 +11,11 @@ import NavbarAdmin from "@/components/NavbarAdmin.vue";
 import CrearUsuario from "@/components/Admin/Usuarios/CrearUsuario.vue";
 export default {
     name: "UsuarioCreateView",
-    components: { NavbarAdmin, CrearUsuario }
+    components: { NavbarAdmin, CrearUsuario },
+    mounted() {
+        let body = document.querySelector('body');
+        body.style.backgroundColor = "#ffffff";
+    }
 }
 </script>
 <style scoped>

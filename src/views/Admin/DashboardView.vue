@@ -16,11 +16,15 @@ import NavbarAdmin from "@/components/NavbarAdmin.vue"
 export default {
     name: 'DashboardView',
     components: {
-    ContadorDashboard,
-    Productos,
-    Pedidos,
-    NavbarAdmin
-}
+        ContadorDashboard,
+        Productos,
+        Pedidos,
+        NavbarAdmin
+    },
+    mounted() {
+        let body = document.querySelector('body');
+        body.style.backgroundColor = "#ffffff";
+    }
 }
 </script>
 

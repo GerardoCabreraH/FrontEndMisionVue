@@ -26,6 +26,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Pastelero
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <router-link to="/admin/login" class="dropdown-item">Login</router-link>
+                                <router-link to="/admin/dashboard" class="dropdown-item">Panel</router-link>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <router-link to="/admin/login" class="nav-link">Pastelero</router-link>
                         </li>

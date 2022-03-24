@@ -12,7 +12,11 @@ import NavbarAdmin from "@/components/NavbarAdmin.vue";
 import VerPedido from "@/components/Admin/Pedidos/VerPedido.vue";
 export default {
     name: "PedidosShowIndex",
-    components: { NavbarAdmin, VerPedido }
+    components: { NavbarAdmin, VerPedido },
+    mounted() {
+      let body = document.querySelector('body');
+      body.style.backgroundColor = "#ffffff";
+    }
 }
 </script>
 
