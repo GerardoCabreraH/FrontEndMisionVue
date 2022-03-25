@@ -2,7 +2,7 @@
     <header id="menu">
         <nav class="navbar navbar-expand-lg navbar-light navbarAdmin">
             <div class="container">
-                <button type="button" id="navbarBrandAdmin" class="navbar-brand btn btn-link" @click="showSidebar()"><i
+                <button type="button" id="navbarBrandAdmin" class="navbar-brand btn btn-link" @click="$store.dispatch('showSidebar')"><i
                         class="fas fa-cogs"></i></button>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,11 +117,14 @@ export default {
         float: left;
         overflow-x: hidden;
         overflow-y: hidden;
-        top: 60px;
+        top: 92px;
     }
     .navbarAdmin {
         width: 100%;
         float: left;
+    }
+    .sidebarAdmin li a {
+        font-size: 12px;
     }
     .content {
         width: 100%;

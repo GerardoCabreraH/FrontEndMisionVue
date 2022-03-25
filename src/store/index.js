@@ -41,11 +41,6 @@ export default createStore({
       }
       document.getElementsByName("total")[0].value = total.toFixed(2);
     },
-  },
-  actions: {
-    totalIt (context) {
-      context.commit('totalIt')
-    },
     showSidebar() {
       var sidebar = document.getElementById("sidebar");
       var dashboard = document.getElementById("dashboard");
@@ -56,6 +51,14 @@ export default createStore({
         sidebar.style.display = "none";
         dashboard.style.display = "block";
       }
+    },
+  },
+  actions: {
+    totalIt (context) {
+      context.commit('totalIt')
+    },
+    showSidebar (context) {
+      context.commit('showSidebar')
     },
   },
   modules: {
