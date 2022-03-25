@@ -14,7 +14,7 @@
                                     <div class="col-12 col-sm-12">
                                         <InformacionSabor>
                                             <div class="form-group">
-                                                <img src="../../../../assets/img/productos/sabor-chocolate.jpg" class="img-fluid img-card" alt="producto-pastel">
+                                                <img src="https://cdn.pixabay.com/photo/2013/10/30/21/03/chocolate-203276_960_720.jpg" class="img-fluid img-card" alt="producto-pastel">
                                             </div>
                                             <div class="form-group">
                                                 <p><strong>Código del producto:</strong> M00222</p>

@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <router-link to="/"><img
-                        src="../assets/img/pasteleria-monterrollo-fondo-blanco.png" alt="logo-monterrollo"
+                        src="https://pasteleria.celtech.com.mx/assets/img/Pasteleria%20Monterrollo-Fondo%20Blanco.png" alt="logo-monterrollo"
                         class="img-fluid img-navbar"></router-link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

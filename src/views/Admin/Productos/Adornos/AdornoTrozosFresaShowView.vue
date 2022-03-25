@@ -14,7 +14,7 @@
                                     <div class="col-12 col-sm-12">
                                         <InformacionAdorno>
                                             <div class="form-group">
-                                                <img src="../../../../assets/img/productos/trozos-de-fresa.jpg"
+                                                <img src="https://cdn.pixabay.com/photo/2018/04/19/17/43/food-3333790_960_720.jpg"
                                                     class="img-fluid img-card" alt="producto-pastel">
                                             </div>
                                             <div class="form-group">

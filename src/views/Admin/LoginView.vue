@@ -8,7 +8,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 text-center">
-                                        <img src="../../assets/img/pasteleria-monterrollo-fondo-blanco.png" alt="logo-monterrollo" class="img-fluid img-login">
+                                        <img src="https://pasteleria.celtech.com.mx/assets/img/Pasteleria%20Monterrollo-Fondo%20Blanco.png" alt="logo-monterrollo" class="img-fluid img-login">
                                     </div>
                                     <div class="col-12 col-sm-12">
                                         <h1 class="text-center">Login</h1>

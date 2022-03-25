@@ -19,7 +19,7 @@
             <div class="sidebarLogo">
                 <div class="row">
                     <div class="col-12 col-sm-12 text-center">
-                        <img src="../assets/img/pasteleria-monterrollo-fondo-blanco.png" alt="logo-monterrollo"
+                        <img src="https://pasteleria.celtech.com.mx/assets/img/Pasteleria%20Monterrollo-Fondo%20Blanco.png" alt="logo-monterrollo"
                             class="img-fluid img-sidebar">
                         <p>Pastelería Monterrollo</p>
                     </div>

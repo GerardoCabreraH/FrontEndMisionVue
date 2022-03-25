@@ -17,7 +17,7 @@
                     <div class="col-12 col-sm-6 d-flex flex-column justify-content-center">
                         <div class="card border border-dark">
                             <div class="card-body">
-                                <img src="../../assets/img/pasteleria-monterrollo-logo.png" alt="logo-monterrollo"
+                                <img src="https://pasteleria.celtech.com.mx/assets/img/Pasteleria%20Monterrollo-Logo.png" alt="logo-monterrollo"
                                     class="img-fluid img-about">
                             </div>
                         </div>

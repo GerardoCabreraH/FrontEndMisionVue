@@ -10,7 +10,7 @@ export default {
 
 <style scoped>
 .hero {
-    background-image: url('../../assets/img/pasteleria-monterrollo-portada.png');
+    background-image: url('https://pasteleria.celtech.com.mx/assets/img/Pasteleria%20Monterrollo-Portada.png');
     background-repeat: none;
     background-position: center;
     background-size: 100% 100%;

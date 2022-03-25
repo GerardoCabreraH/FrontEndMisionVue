@@ -14,7 +14,7 @@
                                     <div class="col-12 col-sm-12">
                                         <InformacionAdorno>
                                             <div class="form-group">
-                                                <img src="../../../../assets/img/productos/trozos-de-mango.png"
+                                                <img src="https://cdn.pixabay.com/photo/2016/02/23/17/36/mango-1218147_960_720.png"
                                                     class="img-fluid img-card" alt="producto-pastel">
                                             </div>
                                             <div class="form-group">

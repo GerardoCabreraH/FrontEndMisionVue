@@ -14,7 +14,7 @@
                                     <div class="col-12 col-sm-12">
                                         <InformacionAdorno>
                                             <div class="form-group">
-                                                <img src="../../../../assets/img/productos/trozos-de-durazno.jpg"
+                                                <img src="https://cdn.pixabay.com/photo/2015/12/03/13/51/peach-1074997_960_720.jpg"
                                                     class="img-fluid img-card" alt="producto-pastel">
                                             </div>
                                             <div class="form-group">

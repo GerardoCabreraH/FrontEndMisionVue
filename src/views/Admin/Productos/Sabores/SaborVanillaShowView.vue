@@ -14,7 +14,7 @@
                                     <div class="col-12 col-sm-12">
                                         <InformacionSabor>
                                             <div class="form-group">
-                                                <img src="../../../../assets/img/productos/sabor-vanilla.jpg"
+                                                <img src="https://cdn.pixabay.com/photo/2015/01/06/02/52/vanilla-589820_960_720.jpg"
                                                     class="img-fluid img-card" alt="producto-pastel">
                                             </div>
                                             <div class="form-group">

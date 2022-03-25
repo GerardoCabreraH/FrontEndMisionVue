@@ -14,7 +14,7 @@
                                     <div class="col-12 col-sm-12">
                                         <InformacionSabor>
                                             <div class="form-group">
-                                                <img src="../../../../assets/img/productos/sabor-limon.png"
+                                                <img src="https://cdn.pixabay.com/photo/2020/05/29/06/07/watercolor-fruit-5233886_960_720.png"
                                                     class="img-fluid img-card" alt="producto-pastel">
                                             </div>
                                             <div class="form-group">

@@ -14,7 +14,7 @@
                                     <div class="col-12 col-sm-12">
                                         <InformacionSabor>
                                             <div class="form-group">
-                                                <img src="../../../../assets/img/productos/sabor-fresa.jpg"
+                                                <img src="https://cdn.pixabay.com/photo/2016/04/14/18/42/strawberry-jam-1329440_960_720.jpg"
                                                     class="img-fluid img-card" alt="producto-pastel">
                                             </div>
                                             <div class="form-group">
