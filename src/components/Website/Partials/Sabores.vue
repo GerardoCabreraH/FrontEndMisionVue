@@ -14,7 +14,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ sabor.nombre }}</h5>
                         <p class="card-text"><span class="icon"><i class="fas fa-dollar-sign"></i></span>
-                            Precio: ${{ sabor.precio }}</p>
+                            Precio: ${{ sabor.precio.toFixed(2) }}</p>
                     </div>
                 </div>
             </div>

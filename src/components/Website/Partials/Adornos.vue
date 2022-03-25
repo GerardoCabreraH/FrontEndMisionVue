@@ -14,7 +14,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ adorno.nombre }}</h5>
                         <p class="card-text"><span class="icon"><i class="fas fa-dollar-sign"></i></span>
-                            Precio: ${{ adorno.precio }}</p>
+                            Precio: ${{ adorno.precio.toFixed(2) }}</p>
                     </div>
                 </div>
             </div>
