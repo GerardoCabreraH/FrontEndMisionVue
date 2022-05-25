@@ -4,8 +4,6 @@ Aqui se encontrara las prácticas referentes a la semana de VueJS de la misión 
 
 Prácicas resueltas por: Gerardo Rafael Cabrera Herrera
 
-[Pagina de la practica](http://practicas.celtech.com.mx/)
-
 Redes:
 * GitHub: [GerardoCabreraH](https://github.com/GerardoCabreraH)
 
